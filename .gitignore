@@ -1,0 +1,24 @@
+﻿# Ignore Python virtual environments
+venv/
+.venv/
+
+# Ignore cache, build, and system files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Ignore data folders (optional)
+data/
+logs/
+outputs/
