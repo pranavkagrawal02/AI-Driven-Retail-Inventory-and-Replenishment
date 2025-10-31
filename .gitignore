@@ -1,24 +1,27 @@
-﻿# Ignore Python virtual environments
-venv/
+﻿# venv
 .venv/
+.venv310/
+venv/
+env/
 
-# Ignore cache, build, and system files
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-*.egg-info/
-.eggs/
-build/
-dist/
-.pytest_cache/
+# data - keep only placeholders
+data/*
+!data/.gitkeep
+
+# m5 raw big Kaggle files
+m5-forecasting-accuracy/*
+!m5-forecasting-accuracy/.gitkeep
+
+# cleaned data
+app/data_cleaned/*
+!app/data_cleaned/.gitkeep
+
+# notebooks cache
 .ipynb_checkpoints/
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
+__pycache__/
 
-# Ignore data folders (optional)
-data/
-logs/
+# big PDFs
+Module*.pdf
+
+# outputs
 outputs/
